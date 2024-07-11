@@ -19,6 +19,6 @@ public class HealthProfessional {
     public void printAllDetailsOfHealthProfessional() {
         System.out.println("Doctor Id: " + id);
         System.out.println("Doctor Name: " + name);
-        System.out.println("Doctor Info: " + basicInformation);
+        System.out.println("Doctor Basic Information: " + basicInformation);
     }
 }
