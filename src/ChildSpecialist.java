@@ -1,9 +1,9 @@
-public class ChildSpecialist {
+public class ChildSpecialist extends HealthProfessional {
 
     private String expertise;
 
     public ChildSpecialist() {
-
+        super();
     }
 
     public ChildSpecialist(int id, String name, String basicInformation, String expertise) {
