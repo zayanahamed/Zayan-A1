@@ -15,7 +15,7 @@ public class HealthProfessional {
         this.basicInformation = basicInformation;
     }
 
-
+    // THis function are used to print general details about the dr
     public void printAllDetailsOfHealthProfessional() {
         System.out.println("Doctor Id: " + id);
         System.out.println("Doctor Name: " + name);
