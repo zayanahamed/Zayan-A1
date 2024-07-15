@@ -5,12 +5,12 @@ public class AssignmentOne {
     public static void main(String[] args) {
 
         // using classes and object for the creation of dr and thier info
-        GeneralPractitioner generalPractitioner1 = new GeneralPractitioner(1, "Dr. Zayan B1", "Provides health care for all type of people, ages and diseases", "Family Doctor");
-        GeneralPractitioner generalPractitioner2 = new GeneralPractitioner(2, "Dr. Zayan B2", "Provides health care for peaditric emergency", "Peads Emergency");
-        GeneralPractitioner generalPractitioner3 = new GeneralPractitioner(3, "Dr. Zayan B3", "Provides emergency services in ICU", "ICU Specialist");
+        GeneralPractitioner generalPractitioner1 = new GeneralPractitioner(1, "Dr. Zayan", "Provides health care for all type of people, ages and diseases", "Family Doctor");
+        GeneralPractitioner generalPractitioner2 = new GeneralPractitioner(2, "Dr. Bret Lee", "Provides health care for peaditric emergency", "Peads Emergency");
+        GeneralPractitioner generalPractitioner3 = new GeneralPractitioner(3, "Dr. Ali", "Provides emergency services in ICU", "ICU Specialist");
 
-        ChildSpecialist childSpecialist1 = new ChildSpecialist(4, "Dr. Zayan C1", "Specializes in diagnosing and treating heart conditions in children", "Pediatric Cardiology");
-        ChildSpecialist childSpecialist2 = new ChildSpecialist(5, "Dr. Zayan C2", "Focuses on treating disorders of the nervous system in children", "Pediatric Neurology");
+        ChildSpecialist childSpecialist1 = new ChildSpecialist(4, "Dr. Mitchel", "Specializes in diagnosing and treating heart conditions in children", "Pediatric Cardiology");
+        ChildSpecialist childSpecialist2 = new ChildSpecialist(5, "Dr. Carey", "Focuses on treating disorders of the nervous system in children", "Pediatric Neurology");
 
 
         generalPractitioner1.printGeneralPractitionerDetails();
@@ -24,14 +24,14 @@ public class AssignmentOne {
         // this code for the appointment booking
         ArrayList<Appointment> appointments = new ArrayList<>();
 
-        createAppointment(appointments, "Zayan Ahmad", "+923001234567", "08:00", generalPractitioner1);
-        createAppointment(appointments, "Zayan A1", "+923001239870", "10:00", generalPractitioner2);
-        createAppointment(appointments, "Zayan A2", "+923001234560", "14:30", childSpecialist1);
-        createAppointment(appointments, "Zayan A3", "+923001234569", "16:00", childSpecialist2);
+        createAppointment(appointments, "Zayan", "+6146484745", "08:00", generalPractitioner1);
+        createAppointment(appointments, "Smith", "+6135825373", "10:00", generalPractitioner2);
+        createAppointment(appointments, "Head", "+6145383783", "14:30", childSpecialist1);
+        createAppointment(appointments, "Ricky", "+6143737361", "16:00", childSpecialist2);
 
         printExistingAppointments(appointments);
 
-        cancelBooking(appointments, "+923001234569");
+        cancelBooking(appointments, "+6145383783");
 
         printExistingAppointments(appointments);
 
